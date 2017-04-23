@@ -11,7 +11,7 @@ layout "admin"
   end
 
  def show
-   @job = Job.find(params[:id])
+   @job = Job.find(params[:id]) 
  end
 
  def index
