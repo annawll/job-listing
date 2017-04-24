@@ -65,13 +65,24 @@
       color: #212121;
   }
 
+
+
+
+  //--------- 搜索栏---------
+  .search-border {
+    margin-top: 8px;
+    margin-left: 50px;
+    margin-right: -200px;
+
+
+  }
   //---------Box---------
 
  .box {
      background-image: image-url("header.jpg");
      background-repeat: no-repeat;
      background-size: cover;
-     margin-bottom: 50px;
+     margin-bottom: 100px;
 
      .box-inner {
          background-color: transparent;
@@ -127,3 +138,19 @@
      font-size: 18px;
      font-weight: 400;
  }
+
+
+
+//--------- 注册／登录---------
+ .border-color {
+   color: #FF6F00;
+
+}
+
+.signup-style{
+  background-color:  #FAFAFA;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
