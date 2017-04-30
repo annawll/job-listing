@@ -1,12 +1,16 @@
-<div class="show-2" >
-<h3> send resume to  <%= @job.title %> </h3>
+<div class="col-lg-6 col-lg-offset-2">
+  <div class="show-2" >
+  <h3> send resume to  <%= @job.title %> </h3>
+  </div>
+  <hr>
+
+
+  <%= simple_form_for [@job, @resume] do |f| %>
+    <%= f.input :content %>
+    <%= f.input :attachment %>
+
+    <%= f.submit "送出" %>
+  <% end %>
+  <br>
+    <%= link_to("Back", jobs_path, class: 'btn btn-default') %>
 </div>
-<hr>
-
-
-<%= simple_form_for [@job, @resume] do |f| %>
-  <%= f.input :content %>
-  <%= f.input :attachment %>
-
-  <%= f.submit "送出" %>
-<% end %>

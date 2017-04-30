@@ -1,12 +1,14 @@
-<div class="show-1">
-  <div class="show-2" >
-    <h2> <%= @job.title %> </h2>
+<div class="col-lg-12 col-lg-offset-2">
+  <div class="show-1">
+    <div class="show-2" >
+      <h2> <%= @job.title %> </h2>
+    </div>
+    <br>
+    <div class="show-3">
+      <p><%= simple_format(@job.description) %><p>
+    </div>
+      <%= link_to("投交履历", new_job_resume_path(@job), class:'btn btn-default') %>
   </div>
-  <br>
-  <div class="show-3">
-    <p><%= simple_format(@job.description) %><p>
-  </div>
-    <%= link_to("投交履历", new_job_resume_path(@job), class:'btn btn-default') %>
+    <br>
+      <%= link_to("Back", jobs_path, class: 'btn btn-default') %>
 </div>
-  <br>
-    <%= link_to("Back", jobs_path, class: 'btn btn-default') %>
