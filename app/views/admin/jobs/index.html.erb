@@ -10,6 +10,9 @@
             <td>
                 职缺
             </td>
+            <td>
+                城市
+            </td>
 
             <td>
               收到履历数量
@@ -37,6 +40,7 @@
 
             <%= link_to(job.title, admin_job_path(job)) %>
         </td>
+        <td> <%= job.city %> </td>
         <td> <%= link_to(job.resumes.count, admin_job_resumes_path(job)) %> </td>
         <td> <%= job.wage_lower_bound %> </td>
         <td> <%= job.wage_upper_bound %> </td>
